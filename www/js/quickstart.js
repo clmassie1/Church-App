@@ -102,7 +102,7 @@ function storeToken(token) {
  *
  * @param {google.auth.OAuth2} auth An authorized OAuth2 client.
  */
-$scope.listEvents = function(auth) {
+listEvents = function(auth) {
   var calendar = google.calendar('v3');
   calendar.events.list({
     auth: auth,
